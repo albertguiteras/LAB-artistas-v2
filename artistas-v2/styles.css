@@ -1,0 +1,359 @@
+/* ==========================================
+   1. RESET Y VARIABLES GLOBALES
+   ========================================== */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("img/fondo.avif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* ==========================================
+   2. ETIQUETAS HTML Y TIPOGRAFÍA BASE
+   ========================================== */
+a {
+  color: rgb(59, 151, 212);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+h2 a {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+h2 a:hover {
+  transform: scale(1.08);
+}
+
+h3 {
+  letter-spacing: 5px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+article {
+  margin-right: 40px;
+}
+
+article h2 {
+  margin-bottom: 10px;
+}
+
+article p {
+  text-align: justify;
+}
+
+/* ==========================================
+   3. ESTRUCTURA Y LAYOUT PRINCIPAL
+   ========================================== */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 5px;
+  font-size: 24px;
+}
+
+header h1 {
+  color: rgb(255, 255, 255);
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600;
+  letter-spacing: 40px;
+  margin-right: -40px;
+}
+
+nav {
+  margin: 0 auto;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  position: absolute;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  left: 0px;
+  justify-content: center;
+}
+
+nav li:hover {
+  transform: scale(1.2);
+}
+
+details {
+  margin-bottom: 70px;
+  font-weight: 600;
+  font-size: 24px;
+  width: fit-content;
+}
+
+summary {
+  color: rgb(250, 148, 64);
+  justify-content: center;
+  list-style: none;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+summary:hover {
+  transform: scale(1.3);
+}
+
+main {
+  margin: 0 auto;
+  width: 70%;
+  display: block;
+}
+
+section {
+  display: flex;
+  padding: 20px;
+  background-color: rgb(163, 163, 163);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  align-items: center;
+  opacity: 0.8;
+}
+
+section > a > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50px;
+}
+
+section > a > img:hover {
+  transform: scale(1.025);
+  rotate: -5deg;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  margin-top: auto;
+  font-weight: bold;
+}
+
+/* ==========================================
+   4. COMPONENTES Y BOTONES
+   ========================================== */
+.btn-volver {
+  color: rgb(250, 148, 64);
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 19px;
+}
+
+.btn-volver:hover {
+  text-decoration: underline;
+}
+
+.btn-tickets {
+  padding: 8px 15px;
+  background-color: rgb(250, 148, 64);
+  border: none;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.btn-tickets:hover {
+  background-color: rgb(230, 128, 44);
+}
+
+.btn-youtube {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-youtube:hover {
+  background-color: rgb(204, 0, 0);
+}
+
+.footer-link {
+  color: rgb(250, 148, 64);
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================
+   5. SECCIONES ESPECÍFICAS (PERFIL DE ARTISTA)
+   ========================================== */
+
+/* Layout general para estas secciones */
+.disc, .gira, .datos {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* --- Sección: Popular --- */
+.pop {
+  flex-direction: column;
+  width: 100%;
+}
+
+.pop h3 {
+  margin-bottom: 15px;
+  color: rgb(0, 0, 0);
+}
+
+.canciones-lista {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 8px;
+}
+
+.cancion-row {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+}
+
+.cancion-row:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.01);
+}
+
+.cancion-row .num {
+  font-weight: bold;
+  width: 30px;
+  color: rgb(0, 0, 0);
+}
+
+.cancion-row img {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.cancion-row p {
+  font-weight: bold;
+  margin: 0px;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.cancion-row .reproducciones {
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+/* --- Sección: Discografía --- */
+.disc ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 15px;
+  padding: 0px;
+  list-style: none;
+}
+
+.disc li {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* --- Sección: De Gira (Próximos Conciertos) --- */
+.gira-lista {
+  list-style: none;
+  margin: 15px auto 0px;
+  width: 95%;
+  max-width: 1000px;
+}
+
+.gira-lista li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* --- Sección: Datos Curiosos --- */
+.datos p {
+  margin: 15px 0px;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.datos-cajas {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.caja-dato {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1;
+  min-width: 150px;
+  color: rgb(0, 0, 0);
+}
+
+.caja-dato strong {
+  font-weight: bold;
+}
+
+.caja-dato span {
+  font-weight: normal;
+}
