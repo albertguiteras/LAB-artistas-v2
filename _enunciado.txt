@@ -1,0 +1,40 @@
+Instructions
+Vamos a combinar tus conocimientos de HTML y CSS con tus cantantes favoritos!
+
+Crea al menos tres páginas con tus cantantes (o músicos) preferidos, que incluyan al menos un título, un párrafo y una foto.
+
+El diseño de cada página no tiene que ser igual en este caso, prueba a experimentar con el formateo de texto con cada cantante.
+
+Aprovecha para repasar todo lo visto hasta ahora, y si te animas, investiga sobre nuevas posibilidades gráficas.
+
+Estiliza tu web de artistas formateando los textos y añadiendo imágenes de fondo.
+
+Verifica qué opciones son mejores tanto para la imagen como para los elementos que pueda haber encima (logo, título de la página, otra imagen, un texto, etc). Puedes incluir un div dentro de otro div.
+
+Tómate tu tiempo, no se trata de hacerlo rápido, sino de aprender en base a la experimentación.
+
+Crear una lista (ordenada o desordenada) en algún lugar de la pagina inicial con el indice de artistas de la web.
+
+Los elementos de la lista pueden estar o no subrayados.
+
+Puede haber una lista dentro de otra.
+
+Luego, en cada página añadir otra lista para cada cantante, que incluya, por ejemplo, sus álbumes.
+
+Ejemplo de lista en un autor:
+
+Lista con álbumes de estudio y otra lista con álbumes de conciertos
+
+En cada lista podria ir un listado de las canciones (no hace falta hacer esto demasiado específico)
+
+También podría ser un listado de ciudades visitadas en el tour, o de grammys ganados, o cualquier otra lista.
+
+Puedes probar a poner los elementos de la lista en horizontal con CSS display: flex
+
+Ten en cuenta sobre qué elementos estás actuando en el CSS, y cuáles están dentro de otros en las listas!
+
+Prueba a añadir una tabla en tu web de cantantes o noticias. Por ejemplo, los albumes que se han sacado en cada década, o los grammy ganados, o cualquier otra clasificación que se te ocurra.
+Recuerda que le puedes añadir una cabecera de tabla y que una celda puede ocupar más de una columna si lo necesitas.
+
+En tu listado de cantantes, añade un enlace a un VIDEO y un enlace a un AUDIO, parecido a la imagen de muestra.
+¡Encuentra cómo añadir iconos en tu HTML!
